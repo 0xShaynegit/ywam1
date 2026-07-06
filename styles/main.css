@@ -216,6 +216,12 @@ video {
   display: flex;
   align-items: center;
   gap: var(--space-3);
+  transition: padding 0.35s var(--ease-out);
+}
+
+.site-header.is-scrolled .header-inner {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .brand {
@@ -232,6 +238,7 @@ video {
   height: 2rem;
   flex: none;
   background: var(--gold);
+  transition: width 0.35s var(--ease-out), height 0.35s var(--ease-out);
   -webkit-mask: url("../images/ywamchiangmai-ywam-chiangmai-logo-mark-dark.svg") center / contain no-repeat;
   mask: url("../images/ywamchiangmai-ywam-chiangmai-logo-mark-dark.svg") center / contain no-repeat;
 }
@@ -253,6 +260,11 @@ video {
   gap: 0.6rem;
 }
 .footer-brand .brand-mark { width: 1.6rem; height: 1.6rem; }
+
+.site-header.is-scrolled .brand-mark {
+  width: 1.6rem;
+  height: 1.6rem;
+}
 
 .site-nav {
   display: none;
