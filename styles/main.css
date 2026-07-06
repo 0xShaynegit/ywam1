@@ -54,6 +54,7 @@ html {
 }
 
 body {
+  cursor: url("images/ywamchiangmai-ywam-chiangmai-cursor-white.svg") 4 4, auto;
   font-family: var(--font-display);
   font-weight: 400;
   font-size: 1rem;
@@ -230,6 +231,9 @@ video {
   width: 2rem;
   height: 2rem;
   flex: none;
+  background: var(--gold);
+  -webkit-mask: url("images/ywamchiangmai-ywam-chiangmai-safari-pinned-tab.svg") center / contain no-repeat;
+  mask: url("images/ywamchiangmai-ywam-chiangmai-safari-pinned-tab.svg") center / contain no-repeat;
 }
 
 .brand-name {
@@ -242,6 +246,13 @@ video {
   font-style: normal;
   color: var(--gold);
 }
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.footer-brand .brand-mark { width: 1.6rem; height: 1.6rem; }
 
 .site-nav {
   display: none;
